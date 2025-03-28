@@ -1,0 +1,10 @@
+/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [ProfileIndex]
+      ,[ProfileID]
+      ,[BHAStartTime]
+      ,[BHALastDuration]
+      ,[UBCStartTime]
+      ,[UBCLastDuration]
+      ,[TotalDuration]
+      ,[JobID]
+  FROM [Phoenix_StoragePointJobs].[dbo].[JobRunState]
